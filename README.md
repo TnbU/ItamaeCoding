@@ -27,3 +27,8 @@ That's same as you write
 ~~~
 yum install httpd
 ~~~
+
+
+ということで、
+サーバプロビジョニングとか、CIとか、infrastructure as codeとか、
+慣れないけど頑張っていきましょい。
