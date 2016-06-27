@@ -4,11 +4,12 @@ This repository is for code of Itamae.
 To prepare servers. Apache + Tomcat....
 
 
-I wilj write for example,,,
--user
--iptables
+I will write for example,,,
+* user
+* iptables
 * selinux
-*apache
+* apache
+* tomcat
 
 
 Ex,code(itamae)
