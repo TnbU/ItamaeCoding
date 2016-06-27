@@ -1,20 +1,29 @@
 # ItamaeCoding
 This repository is for code of Itamae.
 
-To prepare servers. Apache + Tomcat....
+To prepare servers automatically, I use Itamae.
+As Sushi shokunin.
+
+Provisioning to realize servers scaling.
+I will prepare servers for apache+tomcat
 
 
-I will write for example,,,
-* user
+So, I will write for example,,,
+* adduser
 * iptables
 * selinux
 * apache
 * tomcat
+..etc
 
 
-Ex,code(itamae)
+Example code(itamae)
 ~~~
 package 'httpd' do
   action :install
 end
+~~~
+That's same as you write
+~~~
+yum install httpd
 ~~~
