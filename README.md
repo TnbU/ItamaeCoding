@@ -7,7 +7,7 @@ To prepare servers. Apache + Tomcat....
 I wilj write for example,,,
 -user
 -iptables
-*selinux
+* selinux
 *apache
 
 
