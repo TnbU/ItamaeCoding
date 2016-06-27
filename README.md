@@ -14,5 +14,7 @@ I will write for example,,,
 
 Ex,code(itamae)
 ~~~
-Ajtj
-~~~~~
+package 'httpd' do
+  action :install
+end
+~~~
