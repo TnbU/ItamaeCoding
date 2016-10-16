@@ -1,8 +1,8 @@
 execute 'createuser' do
-  not_if "id samplemen"
+  not_if "id user"
   user "root"
   command <<-EOS
-  useradd samplemen
+  useradd user
 EOS
 end
 

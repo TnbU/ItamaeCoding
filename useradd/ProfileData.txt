@@ -1,1 +1,1 @@
-samplemen:thisispassworddesuyon
+user:password
