@@ -42,12 +42,28 @@ remote_file "/etc/httpd/conf.d/error.conf" do
   not_if "test -e /etc/httpd/conf.d/error.conf"
 end
 
-# remove noindex.html
-execute "remove noindex.html" do
+
+# remove default conf file.
+execute "remove autoindex.conf" do
   user "root"
-  only_if "test -e /var/www/error/noindex.html"
-  command "mv -f /var/www/error/noindex.html /var/www/error/noindex.org"
+  only_if "test -e /etc/httpd/conf.d/autoindex.conf"
+  command "mv -f /etc/httpd/conf.d/autoindex.conf /etc/httpd/conf.d/autoindex.conf.org"
 end
+
+# remove default conf file.
+execute "remove userdir.conf" do
+  user "root"
+  only_if "test -e /etc/httpd/conf.d/userdir.conf"
+  command "mv -f /etc/httpd/conf.d/userdir.conf /etc/httpd/conf.d/userdir.conf.org"
+end
+
+# remove default conf file.
+execute "remove welcome.conf" do
+  user "root"
+  only_if "test -e /etc/httpd/conf.d/welcome.conf"
+  command "mv -f /etc/httpd/conf.d/welcome.conf /etc/httpd/conf.d/welcome.conf.org"
+end
+
 
 
 # httpd.conf(update)
